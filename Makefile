@@ -396,6 +396,8 @@ ERRATA_A53_836870 := 1
 ERRATA_A53_843419 := 1
 A53_DISABLE_NON_TEMPORAL_HINT := 1
 
+KBUILD_CLFAGS += -floop-nest-optimize -fgraphite-identity -ftree-loop-distribution
+
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
 KBUILD_AFLAGS   := -D__ASSEMBLY__

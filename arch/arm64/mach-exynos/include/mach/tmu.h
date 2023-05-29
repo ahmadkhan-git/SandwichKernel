@@ -25,9 +25,9 @@
 #define COLD_TEMP		15
 #endif
 #define HOT_NORMAL_TEMP		95
-#define HOT_CRITICAL_TEMP	110
-#define MIF_TH_TEMP1		55
-#define MIF_TH_TEMP2		95
+#define HOT_CRITICAL_TEMP	100
+#define MIF_TH_TEMP1		50
+#define MIF_TH_TEMP2		90
 
 #if defined(CONFIG_SOC_EXYNOS5433)
 #define GPU_TH_TEMP1		95
