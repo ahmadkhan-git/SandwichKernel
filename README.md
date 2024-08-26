@@ -1,3 +1,4 @@
+https://xdaforums.com/attachments/img_20220426_005411_470-jpg.5629985/
 # AOSP Sandwich Kernel for Samsung Galaxy J700F/H/M
 
 ![Kernel](https://img.shields.io/badge/Kernel-v3.10-blue) ![Device](https://img.shields.io/badge/Device-J700F/H/M-green) ![Status](https://img.shields.io/badge/Status-Active-success)
