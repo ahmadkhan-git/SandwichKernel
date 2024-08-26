@@ -1,75 +1,75 @@
-# AOSP Sandwich Kernel for J700F/H/M
+# AOSP Sandwich Kernel for Samsung Galaxy J700F/H/M
 
-> AOSP Sandwich Kernel is a custom kernel designed specifically for Samsung Galaxy J700F/H/M devices. It aims to enhance the performance and stability of your device, providing an optimized experience for Android enthusiasts.
+![Kernel](https://img.shields.io/badge/Kernel-v3.10-blue) ![Device](https://img.shields.io/badge/Device-J700F/H/M-green) ![Status](https://img.shields.io/badge/Status-Active-success)
 
-## Features
+> **AOSP Sandwich Kernel** is a custom kernel tailored for the Samsung Galaxy J700F/H/M series, aiming to deliver superior performance and stability. This kernel is optimized for users seeking enhanced battery life, improved multitasking, and overall a better Android experience.
 
-- Compiled with Linaro Toolchain 7.5 2019/12 (Updated GCC to 7.5)
-- Applied Graphite, Ofast, unroll-loops & gcc optimizations
-- Removed overclock and reverted back to stock frequencies
-- Overclocked GPU from 668mhz to 800mhz
-- Tweaked for overall improvement in Battery backup & performance
-- Added New CPU governors
-  - Intelliactive (default)
-  - ConservativeX
-  - InteractivePro
-  - OnDemand (might have reboot issues, untested)
-- Added New I/O schedulers
-  - Noop (default)
-  - Maple
-  - Deadline
-  - CFQ
-- Removed sluggish stock dynamic exynos 7580 hotplug and introduced Lazyplug
-- Lazyplug hotplug
-- Applied Powersuspend hooks in GPU, CPU governors, etc
-- Various features from later kernel versions backported (Thanks to LineageOS team)
-- Added Latest Wireguard support
-- Enabled Simple Low Memory Killer
-- Enabled zRAM with Lz0 & Lz4 compression algorithm (Thanks to Danny from LineageOS team)
-- Disabled CRC check by default
-- fSync toggle
-- Boeffla Wakelock Blocker 1.1.0
-  - Few wakelocks added to the list by default.
-- Power efficiency feature by NVIDIA™
-- Powersuspend Driver
-- fSync Toggle
-- Updated fRandom driver (This should increase the speed of random numbers generation)
-- NVS hibernation driver
-- Tweaked Thermal throttle of GPU
-- Tweaked TCP speed (improvement in internet)
-- Selected 'westwood' as default TCP congestion algorithm (improve overall internet experience)
-- Optimized 'westwood' tcp
-- The device will enter the deep sleep more quickly
-- Improved CPU load management
-- Improved multitasking
-- Support F2FS file system (Thanks to J7 LineageOS team)
-- SeLinux toggle switch
-- LinaroTC optimizations
-- Minor Memory leaks fixed
-- Total project revamped
-- And many underhood optimizations
+## ✨ Features
 
-## Installation
+- **Toolchain**: Compiled with Linaro Toolchain 7.5 (2019/12)
+  - Updated GCC to 7.5
+  - Applied Graphite, Ofast, unroll-loops, and GCC optimizations
+- **CPU & GPU Tweaks**:
+  - Removed overclock, restored stock CPU frequencies
+  - Overclocked GPU from 668MHz to 800MHz
+  - Added new CPU governors:
+    - **Intelliactive (default)**
+    - **ConservativeX**
+    - **InteractivePro**
+    - **OnDemand** (untested)
+  - Added new I/O schedulers:
+    - **Noop (default)**
+    - **Maple**
+    - **Deadline**
+    - **CFQ**
+- **Hotplugging & Power**:
+  - Removed sluggish dynamic Exynos 7580 hotplug and introduced **Lazyplug**
+  - Powersuspend hooks in GPU, CPU governors, and more
+  - Added **Power efficiency** features by NVIDIA™
+- **Memory & Performance**:
+  - Enabled zRAM with LZO & LZ4 compression (Thanks to Danny from LineageOS)
+  - Enabled Simple Low Memory Killer
+  - Improved CPU load management and multitasking
+  - Device enters deep sleep more quickly
+  - Tweaked thermal throttle of GPU
+  - **fSync Toggle**, **Boeffla Wakelock Blocker 1.1.0**
+  - Updated **fRandom driver** for faster random number generation
+  - **F2FS** file system support (Thanks to J7 LineageOS team)
+- **Network & TCP**:
+  - Tweaked TCP speed for improved internet performance
+  - Default TCP congestion algorithm set to **westwood**
+  - Optimized westwood TCP for better overall experience
+- **Security**:
+  - Latest **Wireguard** support
+  - **SeLinux toggle switch**
+  - Disabled CRC check by default
+- **Additional Optimizations**:
+  - Minor memory leaks fixed
+  - Project revamped with numerous under-the-hood optimizations
 
-**Requirements:**
+## 📥 Installation
 
-- A rooted Samsung Galaxy J700F/H/M device
-- A custom recovery (e.g., TWRP) installed
+### Requirements:
 
-1. Download the latest kernel ZIP file from the [XDA Developers forum thread](https://forum.xda-developers.com/t/kernel-aosp-sandwich-kernel-for-j700f-h-m.4437003/).
-2. Boot your device into recovery mode.
-3. Create a Nandroid backup of your current ROM (recommended).
-4. Flash the kernel ZIP file using your custom recovery.
-5. Wipe dalvik cache, cache.
-6. Reboot your device.
+- Rooted Samsung Galaxy J700F/H/M device
+- Custom recovery installed (e.g., TWRP)
 
-## Troubleshooting
+### Steps:
 
-If you encounter any issues or have questions regarding the AOSP Sandwich Kernel, you can:
+1. **Download** the latest kernel ZIP from the [XDA Developers thread](https://forum.xda-developers.com/t/kernel-aosp-sandwich-kernel-for-j700f-h-m.4437003/).
+2. **Boot** into recovery mode.
+3. **Create a Nandroid Backup** (recommended).
+4. **Flash** the kernel ZIP using your custom recovery.
+5. **Wipe dalvik cache and cache**.
+6. **Reboot** your device and enjoy!
 
-- Visit the [XDA Developers forum thread](https://forum.xda-developers.com/t/kernel-aosp-sandwich-kernel-for-j700f-h-m.4437003/) and post your inquiry.
-- Check the thread for existing solutions and troubleshooting tips provided by the developer and the community.
+## 🛠 Troubleshooting
 
-## Credits
+If you face any issues or have questions:
 
-AOSP Sandwich Kernel is developed and maintained by [Ahmad Khan](https://github.com/AhmadKhan006)
+- Visit the [XDA Developers thread](https://forum.xda-developers.com/t/kernel-aosp-sandwich-kernel-for-j700f-h-m.4437003/).
+- Check for existing solutions or post your query in the forum.
+
+## 🙌 Credits
+
+AOSP Sandwich Kernel is fork of Linux Kernel 3.10 by [Ahmad Khan](https://github.com/AhmadKhan006).
