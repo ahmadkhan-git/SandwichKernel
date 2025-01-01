@@ -28,7 +28,7 @@
   - Powersuspend hooks in GPU, CPU governors, and more
   - Added **Power efficiency** features by NVIDIA™
 - **Memory & Performance**:
-  - Enabled zRAM with LZO & LZ4 compression (Thanks to Danny from LineageOS)
+  - Enabled zRAM with LZO & LZ4 compression (Thanks to danwood76 from LineageOS)
   - Enabled Simple Low Memory Killer
   - Improved CPU load management and multitasking
   - Device enters deep sleep more quickly
