@@ -73,4 +73,4 @@ If you face any issues or have questions:
 
 ## 🙌 Credits
 
-AOSP Sandwich Kernel is fork of Linux Kernel 3.10 by [Ahmad Khan](https://github.com/ahmadkhan-git).
+AOSP Sandwich Kernel is fork of G610F/H/M Samsung Opensource Linux Kernel 3.10 by [Ahmad Khan](https://github.com/ahmadkhan-git).
